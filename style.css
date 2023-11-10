@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 60vw;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+}
+
+.banks {
+    width: 35%;
+    justify-content: space-around;
+    font-size: 50px;
+    text-align: center;
+
+    & .bank {
+        height: 19%;
+        padding: 30px 0;
+    }
+
+    & .฿20{
+        background-color: #9FBB73;
+    }
+
+    & .฿50{
+        background-color: #87C4FF;
+    }
+
+    & .฿100{
+        background-color: #F3B664;
+    }
+
+    & .฿500{
+        background-color: #D0A2F7;
+    }
+
+    & .฿1000{
+        background-color: #BFB29E;
+    }
+
+    
+}
+
+.amount {
+    width: 33%;
+    font-size: 48px;
+    margin: 0 5px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+    & .amount-text {
+        width: 20%;
+        padding: 25px 0;
+    }
+    
+    & .amount-slot {
+        height: 19%;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px 0;
+        background-color: #B0D9B1;
+    }
+
+    & button {
+        width: 100px;
+        height: 100px;
+        font-size: 48px;
+    }
+}
+
+.total {
+    width: 20%;
+    font-size: 48px;
+    margin-right: 5px;
+    justify-content: space-around;
+    text-align: center;
+
+    & .total-slot {
+        height: 19%;
+        padding: 35px 0;
+        background-color: #F9F3CC;
+    }
+}
+
+.grand-total {
+    width: 15%;
+    font-size: 48px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #FFC6AC;
+}

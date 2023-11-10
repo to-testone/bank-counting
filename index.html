@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Counting</title>
+</head>
+<body>
+    <div class="container flex-row">
+        <div class="banks flex-column">
+            <div class="bank ฿20" data-type="20">20฿</div>
+            <div class="bank ฿50" data-type="50">50฿</div>
+            <div class="bank ฿100" data-type="100">100฿</div>
+            <div class="bank ฿500" data-type="500">500฿</div>
+            <div class="bank ฿1000" data-type="1000">1000฿</div>
+        </div>
+        <div class="amount flex-column">
+            <div class="amount-slot flex-row">
+                <button class="minus" data-minusType="20">-</button>
+                <div class="amount-text" data-amountType="20">0</div>
+                <button class="plus" data-plusType="20">+</button>
+            </div>
+            <div class="amount-slot flex-row">
+                <button class="minus" data-minusType="50">-</button>
+                <div class="amount-text" data-amountType="50">0</div>
+                <button class="plus" data-plusType="50">+</button>
+            </div>
+            <div class="amount-slot flex-row">
+                <button class="minus" data-minusType="100">-</button>
+                <div class="amount-text" data-amountType="100">0</div>
+                <button class="plus" data-plusType="100">+</button>
+            </div>
+            <div class="amount-slot flex-row">
+                <button class="minus" data-minusType="500">-</button>
+                <div class="amount-text" data-amountType="500">0</div>
+                <button class="plus" data-plusType="500">+</button>
+            </div>
+            <div class="amount-slot flex-row">
+                <button class="minus" data-minusType="1000">-</button>
+                <div class="amount-text" data-amountType="1000">0</div>
+                <button class="plus" data-plusType="1000">+</button>
+            </div>
+        </div>
+        <div class="total flex-column">
+            <div class="total-slot" data-totalType="20">0</div>
+            <div class="total-slot" data-totalType="50">0</div>
+            <div class="total-slot" data-totalType="100">0</div>
+            <div class="total-slot" data-totalType="500">0</div>
+            <div class="total-slot" data-totalType="1000">0</div>
+        </div>
+        <div class="grand-total flex-column">
+            <div>T</div>
+            <div>O</div>
+            <div>T</div>
+            <div>A</div>
+            <div>L</div>
+            <div>=</div>
+            <div id="grand-total">0</div>
+        </div>
+    </div>
+
+    <script src="script.js" defer type="module"></script>
+</body>
+</html>
